@@ -26,7 +26,7 @@ contract SimpleVoting {
 
         candidates[_candidateIndex].voteCount++;
         hasVoted[msg.sender] = true;
-
+        
         emit VoteCast(msg.sender, _candidateIndex);
     }
 
